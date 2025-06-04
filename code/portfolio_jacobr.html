@@ -1,68 +1,423 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jacob R Portfolio</title>
     <!-- css file -->
     <link rel="stylesheet" href="styles.css" />
     <!-- bootstrap.css file -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        crossorigin="anonymous" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
     <!-- boostrap file -->
     <script defer src="portfolio_jacobr.js"></script>
     <!-- boostrap.js file -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer
-        crossorigin="anonymous"></script>
-</head>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      defer
+      crossorigin="anonymous"
+    ></script>
+    <!-- For gifs from lottie -->
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-5">
-            <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#previous-work" class="nav-link">Previous Work</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#projects" class="nav-link">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-5">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a href="#about" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#previous-work" class="nav-link">Previous Work</a>
+              </li>
+              <li class="nav-item">
+                <a href="#projects" class="nav-link">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-        <!-- maybe include welcome section? -->
-        <section id="about">
-            <h2>About</h2>
-        </section>
-        <section id="previous-work">
-            <h2>Previous Work</h2>
-        </section>
-        <section id="projects">
-            <h2>Projects</h2>
-        </section>
+      <section
+        id="about"
+        class="container d-flex align-items-center justify-content-center"
+      >
+        <div class="col-6 d-flex justify-content-center">
+          <img
+            src="../img/self_img.jpg"
+            alt="Photo of Jacob"
+            class="my-photo"
+          />
+        </div>
+        <div class="col-6">
+          <div class="about-card">
+            <h1>Hello, I am Jacob Roessner.</h1>
+            <h2 class="text-muted">Aspiring Full-Stack Software Developer</h2>
+            <p>
+              I enjoy solving problems through clean, efficient code and
+              continuously exploring new technologies. I thrive on curiosity,
+              collaboration, and the challenge of building smart, scalable
+              solutions. Whether working independently or with a team, I’m
+              committed to writing thoughtful, maintainable software.
+            </p>
+            <div class="text-center mt-4">
+              <h3>Skills</h3>
+              <div class="d-flex justify-content-center flex-wrap gap-4 mt-2">
+                <dotlottie-player
+                  src="https://lottie.host/889f0282-f2c0-4a56-ac6c-c6b9f63d9eb1/grWgNvOeGy.lottie"
+                  background="transparent"
+                  speed="1"
+                  style="width: 100px; height: 100px"
+                  loop
+                  autoplay
+                ></dotlottie-player>
+                <dotlottie-player
+                  src="https://lottie.host/05ff0dc4-2c30-49c0-bf3a-5707cdee340b/9zsvoPzgzJ.lottie"
+                  background="transparent"
+                  speed="1"
+                  style="width: 100px; height: 100px"
+                  loop
+                  autoplay
+                ></dotlottie-player>
+
+                <dotlottie-player
+                  src="https://lottie.host/d5f3ce41-7150-4a30-92fb-833a56fda39d/npu6nX44A6.lottie"
+                  background="transparent"
+                  speed="1"
+                  style="width: 100px; height: 100px"
+                  loop
+                  autoplay
+                ></dotlottie-player>
+                <dotlottie-player
+                  src="https://lottie.host/a988bd12-d8c0-4f41-8949-d18cf56ff336/NyjMtovXvR.lottie"
+                  background="transparent"
+                  speed="1"
+                  style="width: 100px; height: 100px"
+                  loop
+                  autoplay
+                ></dotlottie-player>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="previous-work" class="container mt-5">
+        <h2 class="text-center mb-4">Previous Experience</h2>
+        <div class="accordion" id="experienceAccordion">
+          <!-- Professional -->
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+              >
+                Professional Experience - Comcast
+              </button>
+            </h3>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#experienceAccordion"
+            >
+              <div class="accordion-body">
+                <strong>Advanced Services Technician</strong><br />
+                <em
+                  >Comcast, Xfinity – 7900 NE Killingsworth ST, Portland OR,
+                  97218</em
+                ><br />
+                <small>08/2015 to 03/2024</small>
+                <ul class="mt-2">
+                  <li>
+                    Improved customer satisfaction through adherence to quality
+                    assurance standards.
+                  </li>
+                  <li>
+                    Diagnosed and resolved technical issues for over 50 customer
+                    systems weekly, reducing service downtime by 20%.
+                  </li>
+                  <li>
+                    Streamlined task prioritization to consistently meet 100% of
+                    production deadlines over eight years.
+                  </li>
+                  <li>
+                    Created detailed service logs improving follow-up efficiency
+                    and customer satisfaction.
+                  </li>
+                  <li>
+                    Conducted functional and stress tests on network systems,
+                    ensuring optimal performance and reliability.
+                  </li>
+                  <li>
+                    Applied technical expertise to install and troubleshoot
+                    diverse devices.
+                  </li>
+                  <li>
+                    Conducted system performance tests using tools such as
+                    multimeters, tone generators, and cable testers.
+                  </li>
+                  <li>Developed and enforced safety protocols.</li>
+                  <li>
+                    Installed and maintained cable systems across 200+
+                    residential and commercial properties monthly.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Early Work -->
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+              >
+                Early Work Experience - Plaid Pantry, GameStop, Subway
+              </button>
+            </h3>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#experienceAccordion"
+            >
+              <div class="accordion-body">
+                <strong>Plaid Pantry – Assistant Manager</strong><br />
+                <ul class="mt-2">
+                  <li>
+                    Oversaw store operations, including inventory tracking,
+                    staff coordination, and opening/closing procedures.
+                  </li>
+                  <li>
+                    Trained and supervised new employees, developing leadership
+                    and mentorship skills.
+                  </li>
+                  <li>
+                    Maintained high accuracy under pressure while managing
+                    customer transactions and shift responsibilities.
+                  </li>
+                </ul>
+
+                <strong class="mt-3 d-block"
+                  >GameStop – Assistant Manager</strong
+                ><br />
+                <ul class="mt-2">
+                  <li>
+                    Led daily sales floor operations and collaborated on visual
+                    merchandising and promotions.
+                  </li>
+                  <li>
+                    Provided advanced product knowledge and customer support.
+                  </li>
+                  <li>Scheduled staff shifts and coordinated launch events.</li>
+                </ul>
+
+                <strong class="mt-3 d-block">Subway – Assistant Manager</strong
+                ><br />
+                <ul class="mt-2">
+                  <li>
+                    Managed team scheduling, prep planning, and shift coverage
+                    in a fast-paced environment.
+                  </li>
+                  <li>
+                    Implemented process improvements that improved speed and
+                    accuracy during high-traffic hours.
+                  </li>
+                  <li>
+                    Upheld cleanliness, safety, and quality control standards.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Volunteering -->
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+              >
+                Volunteering – TeamUp & Red Cross
+              </button>
+            </h3>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#experienceAccordion"
+            >
+              <div class="accordion-body">
+                <div class="mb-3">
+                  <strong>TeamUp – Community Engagement Volunteer</strong>
+                  <ul>
+                    <li>
+                      Helped run events and group activities for local kids.
+                    </li>
+                    <li>Worked with organizers to plan and set up events.</li>
+                    <li>
+                      Worked with team to ensure all goals were met for events.
+                    </li>
+                  </ul>
+                  <div class="row g-3 mb-3">
+                    <div class="col-12 col-sm-6 col-md-4">
+                      <img
+                        src="../img/team_up.jpg"
+                        alt="TeamUp group banner"
+                        class="img-fluid rounded shadow-sm volunteer-img"
+                      />
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                      <img
+                        src="../img/team_up2.jpg"
+                        alt="TeamUp carrying boards"
+                        class="img-fluid rounded shadow-sm volunteer-img"
+                      />
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                      <img
+                        src="../img/team_up3.jpg"
+                        alt="TeamUp outdoor group"
+                        class="img-fluid rounded shadow-sm volunteer-img"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <strong>Red Cross – Blood Drive Volunteer & Greeter</strong>
+                  <ul>
+                    <li>
+                      Helped people check in and feel welcome at blood drives.
+                    </li>
+                    <li>
+                      Answered questions and guided people through the process.
+                    </li>
+                    <li>
+                      Helped promote health and keep things running smoothly.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="container my-5">
+        <h2 class="text-center mb-4">Projects</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <a
+              href="https://github.com/roessnerjd/haunted_maze"
+              target="_blank"
+              class="text-decoration-none"
+            >
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="card-title">Haunted Maze</h3>
+                  <p class="card-text">
+                    A C++ console-based game where the player navigates through
+                    a spooky maze while avoiding ghosts and trying to find the
+                    exit. The maze is randomly generated or pre-defined, and the
+                    player moves using keyboard inputs.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a
+              href="https://github.com/roessnerjd/card_duel"
+              target="_blank"
+              class="text-decoration-none"
+            >
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="card-title">Card Duel</h3>
+                  <p class="card-text">
+                    A C++ console-based game that simulates a card duel between
+                    two players. The objective of the game is for a player to
+                    either deplete the opponent's health points (HP) or
+                    accumulate 10 gold to achieve victory.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a
+              href="https://github.com/roessnerjd/poke_emulator"
+              target="_blank"
+              class="text-decoration-none"
+            >
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="card-title">Pokemon Emulator</h3>
+                  <p class="card-text">
+                    A C++ program that simulates a Pokemon-style battle between
+                    two trainers. Each trainer uses a team of three Pokemon, and
+                    the battle continues until all of one trainer's Pokemon have
+                    fainted.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="container mb-5">
+        <h2 class="text-center">Contact</h2>
+        <form class="mx-auto" style="max-width: 600px">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" required />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+      </section>
     </main>
 
-    <footer>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Please fill out from to contact me</p>
-        </section>
+    <footer class="bg-dark text-light text-center py-3">
+      &copy; 2025 Designed & Developed by Jacob Roessner.
     </footer>
-</body>
-
+  </body>
 </html>

@@ -1,0 +1,114 @@
+@media (max-width: 768px) {
+  .my-photo {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+  }
+
+  .about-card {
+    padding: 1.5rem;
+  }
+
+  #about {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff !important;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Text glow effect on hover */
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #f8d775 !important;
+  text-shadow: 0 0 8px #f8d775;
+}
+
+/* Optional: underline or highlight background */
+.navbar-dark .navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  width: 50%;
+  height: 2px;
+  background-color: #f8d775;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+.my-photo {
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+  margin: auto;
+  display: block;
+}
+
+.about-card {
+  background-color: #f8f9fa;
+  max-width: 800px;
+  padding: 2rem;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.2);
+  border: none;
+}
+
+.about-card p {
+  padding-top: 20px;
+}
+
+#previous-work {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#previous-work img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.accordion-body ul {
+  padding-left: 1.25rem;
+  margin-bottom: 0;
+}
+
+.accordion-body li {
+  margin-bottom: 0.5rem;
+}
+
+/* Projects Section */
+#projects {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Section */
+#contact {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.2);
+}
