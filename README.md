@@ -21,8 +21,3 @@ img/  # Images used in the site
 - HTML5
 - CSS3
 - JavaScript
-
-## How to Run
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
-open index.html
