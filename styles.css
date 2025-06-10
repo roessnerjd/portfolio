@@ -1,3 +1,4 @@
+/* update page for smaller screens */
 @media (max-width: 768px) {
   .my-photo {
     width: 200px;
@@ -15,20 +16,19 @@
     text-align: center;
   }
 }
-
+/* NAVBAR */
 .navbar-dark .navbar-nav .nav-link {
   color: #ffffff !important;
   transition: all 0.3s ease;
   position: relative;
 }
 
-/* Text glow effect on hover */
+/* effects on navbar hover */
 .navbar-dark .navbar-nav .nav-link:hover {
   color: #f8d775 !important;
   text-shadow: 0 0 8px #f8d775;
 }
 
-/* Optional: underline or highlight background */
 .navbar-dark .navbar-nav .nav-link::after {
   content: "";
   position: absolute;
@@ -45,6 +45,8 @@
 .navbar-dark .navbar-nav .nav-link:hover::after {
   transform: scaleX(1);
 }
+
+/* ABOUT SECTION */
 
 .my-photo {
   box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.2);
@@ -71,6 +73,8 @@
   padding-top: 20px;
 }
 
+/* PREVIOUS WORK */
+
 #previous-work {
   background-color: #f8f9fa;
   padding: 2rem;
@@ -86,6 +90,8 @@
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+
+/* using bootstrap accordian effect for drop down */
 .accordion-body ul {
   padding-left: 1.25rem;
   margin-bottom: 0;
@@ -95,7 +101,8 @@
   margin-bottom: 0.5rem;
 }
 
-/* Projects Section */
+/* PROJECTS */
+
 #projects {
   background-color: #f8f9fa;
   padding: 2rem;
@@ -104,7 +111,8 @@
   box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Contact Section */
+/* CONTACT FORM */
+
 #contact {
   background-color: #f8f9fa;
   padding: 2rem;
