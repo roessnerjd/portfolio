@@ -1,13 +1,18 @@
 # Personal Portfolio
+
 This is my personal portfolio website, built to showcase who I am as a developer and professional.
-It highlights my skills, work experience, projects, and how to get in touch. 
+It highlights my skills, work experience, projects, and how to get in touch.
 
-## Project Structure
+## To view portfolio
 
-- index.html  # Main webpage
-- styles.css  # Custom styles
-- portfolio_jacobr.js  # JavaScript functionality
-- img/  # Images used in the site
+https://roessnerjd.github.io/portfolio/
+
+## Project structure
+
+- index.html # Main webpage
+- styles.css # Custom styles
+- portfolio_jacobr.js # JavaScript functionality
+- img/ # Images used in the site
 
 ## Features
 
@@ -17,7 +22,14 @@ It highlights my skills, work experience, projects, and how to get in touch.
 - **PROJECT SECTION** - Programs I've created
 - **CONTACT FORM** - Form for contacting me
 
-## Tech Stack
+## Tech stack
+
 - HTML5
 - CSS3
 - JavaScript
+
+## How to run
+
+Clone or download the repository:
+
+git clone https://github.com/roessnerjd/portfolio.git
