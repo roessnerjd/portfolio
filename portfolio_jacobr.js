@@ -8,8 +8,8 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-// pop up box when message is sent
 // pop up box when message is sent (Netlify-compatible)
+/*
 const contactForm = document.querySelector("#contact-form");
 
 if (contactForm) {
@@ -35,6 +35,7 @@ if (contactForm) {
     }
   });
 }
+  */
 
 // typewriter effect, pulled from: http://w3schools.com/howto/howto_js_typewriter.asp
 const text = "Hello, I am Jacob Roessner.";
