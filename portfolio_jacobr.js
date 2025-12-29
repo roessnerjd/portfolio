@@ -9,12 +9,30 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 });
 
 // pop up box when message is sent
-const contactForm = document.querySelector("#contact form");
+// pop up box when message is sent (Netlify-compatible)
+const contactForm = document.querySelector("#contact-form");
+
 if (contactForm) {
-  contactForm.addEventListener("submit", function (e) {
+  contactForm.addEventListener("submit", async (e) => {
     e.preventDefault();
-    alert("Message sent. I will respond as soon as possible.");
-    this.reset();
+
+    try {
+      const formData = new FormData(contactForm);
+
+      const res = await fetch("/", {
+        method: "POST",
+        body: formData,
+      });
+
+      if (res.ok) {
+        alert("Message sent. I will respond as soon as possible.");
+        contactForm.reset();
+      } else {
+        alert("Message failed to send. Please try again later.");
+      }
+    } catch (err) {
+      alert("Network error. Please try again later.");
+    }
   });
 }
 
